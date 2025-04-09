@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto Condensed', sans-serif;
+      background-color: #2ab7a9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background-color: #fff;
+      border: 1px solid rgba(0, 0, 0, .125);
+      border-radius: .25rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      width: 320px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .card h2 {
+      margin: 0 0 20px;
+      font-size: 44px;
+      color: #2ab7a9;
+      text-align: left;
+    }
+
+    .card input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .card button {
+      width: 100%;
+      padding: 10px;
+      background-color: #2ab7a9;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 16px;
+    }
+
+    .card button:hover {
+      background-color: #259e92;
+    }
+
+    .text-muted a {
+      color: #6c757d;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+
+    .text-muted a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <form class="card">
+    <h2>Login</h2>
+    <input type="email" placeholder="Email" required>
+    <input type="password" placeholder="Senha" required>
+    <button type="submit">Acessar</button>
+
+    <div style="text-align: left;">
+      <p class="pt-4 text-muted" style="margin-bottom: 10px !important;">
+        <a href="/lojadiariodonordeste/validacao-cadastro/">Já é assinante e não tem login?</a>
+      </p>
+      <p class="text-muted">
+        <a href="/lojadiariodonordeste/esqueci-senha">Esqueceu a senha?</a>
+      </p>
+    </div>
+  </form>
+</body>
+</html>
